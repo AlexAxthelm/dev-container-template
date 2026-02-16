@@ -1,0 +1,6 @@
+claude-config/**/*
+!claude-config/settings.json
+
+workspace/*
+!workspace/CLAUDE.md
+!workspace/docs
