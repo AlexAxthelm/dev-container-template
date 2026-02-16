@@ -1,0 +1,11 @@
+services:
+  claude-code:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    stdin_open: true
+    tty: true
+    command: ["claude"]  # Changed from claude-code
+    volumes:
+      - "./workspace:/workspace"
+      - "./claude-config:/home/node/.claude"
